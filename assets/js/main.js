@@ -46,7 +46,7 @@ function sendMail(e) {
 
 function descargarCV(e) {
     e.preventDefault();
-    const downloadLink = event.currentTarget.href;
+    const downloadLink = e.currentTarget.href;
 
     Swal.fire({
         title: 'Descarga en curso...',
