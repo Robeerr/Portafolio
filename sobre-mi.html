@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="./assets/fonts/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/fonts/poppins/poppins.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/scroll.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="assets/js/menu-desplegable.js" defer></script>
+
+    <title>Portafolio - Roberto López</title>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <!--Layout Principal-->
+    <div class="layout">
+
+        <!--Barra lateral (info usuario)-->
+        <aside class="layout__aside">
+            <section class="aside__user-info">
+                <!--Informacion general usuario-->
+                <div class="user-info__general">
+                    <div class="user-info__container-image">
+                        <img src="assets/img/Foto_Roberto_Lopez_360x360_Final.JPG" class="user-info__image"
+                            alt="Foto de perfil Roberto López">
+                    </div>
+                    <h2 class="user-info__name">Roberto López</h2>
+                    <h4 class="user-info__job">Desarrollador Web || Diseñador UX/UI</h4>
+                </div>
+
+                <!--Menú de navegación-->
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-house"></i>
+                                <span class="menu__overlay">Inicio</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="sobre-mi.html" class="menu__link menu__link--active">
+                                <i class="menu__icon fa-solid fa-user"></i>
+                                <span class="menu__overlay">Sobre mí</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="curriculum.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                                <span class="menu__overlay">Curriculum</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="portafolio.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-briefcase"></i>
+                                <span class="menu__overlay">Portafolio</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="contacto.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-envelope"></i>
+                                <span class="menu__overlay">Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!--Links a redes sociales-->
+                <div class="user-info__links">
+                    <ul class="links__social">
+                        <li class="social__option">
+                            <a href="#" class="social__link">
+                                <i class="social__icon fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                        <li class="social__option">
+                            <a href="#" class="social__link">
+                                <i class="social__icon fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Boton descargar cv-->
+                <div class="user-info__buttons">
+                    <a href="/assets/cv/CV ROBERTO LOPEZ.pdf" class="user-info__btn" id="downloadBtn"
+                        download="CV_Roberto_Lopez">Descargar
+                        CV</a>
+                </div>
+
+                <!--Pie de página-->
+                <footer class="user-info__footer">
+                    &copy; 2024 Roberto López
+                </footer>
+
+            </section>
+        </aside>
+
+        <!--Menu Responsive-->
+        <div class="layout__menu-toggle">
+            <i class="menu-toggle__icon fa-solid fa-bars"></i>
+            <i class="menu-toggle__icon fa-solid fa-xmark"></i>
+        </div>
+
+        <!--Contenido Principal-->
+        <main class="layout__content">
+            <section class="content__page content__about">
+                <!-- Este contenido es el que cambia en cada una de las paginas de navegacion-->
+                <header class="about__header">
+                    <h2 class="about__title">Sobre <span class="title__color">Mí</span></h2>
+                </header>
+
+                <section class="about__personal-info">
+                    <article class="personal-info__bio">
+                        <p class="personal-info__description">
+                            Soy Rober, <strong>Desarrollador Full-Stack</strong> y <strong>Diseñador UX/UI</strong>,
+                            apasionado por la tecnología desde niño. Formado en Bootcamps de <strong>Full-Stack</strong>
+                            y otro de diseño <strong>UX/UI</strong>, tengo conocimientos en <strong>HTML, CSS, React,
+                                JavaScript, Angular, Php, Mysql, Node.js</strong> y herramientas de diseño.
+                            Sigo ampliando mis habilidades con cursos avanzados en Udemy y realizando proyectos
+                            personales. Estoy motivado para seguir aprendiendo y contribuir en el sector tecnológico.
+                        </p>
+                    </article>
+                    <div class="personal-info__data">
+                        <ul class="personal-info__list">
+                            <li class="personal-info__option">
+                                <span class="personal-info__title">Edad</span>
+                                <span class="personal-info__value">25</span>
+                            </li>
+
+                            <li class="personal-info__option">
+                                <span class="personal-info__title">País</span>
+                                <span class="personal-info__value">España</span>
+                            </li>
+
+                            <li class="personal-info__option">
+                                <span class="personal-info__title">Ciudad</span>
+                                <span class="personal-info__value">Santurtzi, Pais Vasco</span>
+                            </li>
+
+                            <li class="personal-info__option">
+                                <span class="personal-info__title">Correo</span>
+                                <span class="personal-info__value">dev.rober07@gmail.com</span>
+                            </li>
+
+                            <li class="personal-info__option">
+                                <span class="personal-info__title">Teléfono</span>
+                                <span class="personal-info__value">634 410 783</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="about__services">
+                    <header class="services__header">
+                        <h3 class="services__title">
+                            Lo que <span class="title__color">hago</span>
+                        </h3>
+                    </header>
+
+                    <div class="services__container">
+
+                        <article class="services__service service__programming">
+                            <div class="service__icon">
+                                <i class="service__real-icon fa-solid fa-code"></i>
+                            </div>
+                            <div class="service__content">
+                                <h4 class="service__title">Programación</h4>
+                                <p class="service__description">
+                                    Inicié mi camino en la programación con un fuerte interés en las tecnologías web y
+                                    una rápida comprensión de los fundamentos del desarrollo de software. He adquirido
+                                    conocimientos prácticos en lenguajes de programción construyendo pequeños proyectos
+                                    que me permiten explorar y mejorar las interacciones del usuario.
+                                </p>
+                                <p class="service__description">
+                                    Participé en proyectos académicos que me introdujeron al ciclo de vida completo del
+                                    software, y actualmente aplico este conocimiento en prácticas de codificación. He
+                                    colaborado en equipos utilizando SCRUM, lo que ha mejorado mi comunicación y
+                                    habilidad para trabajar con otros desarrolladores y diseñadores.
+                                </p>
+                                <p class="service__description">
+                                    Con un enfoque en el aprendizaje continuo, busco oportunidades que me desafíen a
+                                    aplicar y expandir mis habilidades. Comprometido con la mejora constante y la
+                                    integración de feedback para producir software que no solo funcione, sino que
+                                    también ofrezca una experiencia satisfactoria al usuario.
+                                </p>
+                            </div>
+                        </article>
+
+                        <div class="services__right-column">
+                            <article class="services__service service__webdev">
+                                <div class="service__icon">
+                                    <i class="service__real-icon fa-solid fa-computer"></i>
+                                </div>
+
+                                <div class="service__content">
+                                    <h4 class="service__title">Desarrollo web</h4>
+                                    <p class="service__description">
+                                        Mi pasión por el desarrollo web se traduce en la creación de sitios web
+                                        responsivos, accesibles y visualmente atractivos. Aplico las mejores prácticas
+                                        de desarrollo front-end y back-end para producir sitios web que no solo se ven
+                                        bien, sino que también funcionan a la perfección en una amplia gama de
+                                        dispositivos y navegadores.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="services__service service__uxui">
+                                <div class="service__icon">
+                                    <i class="service__real-icon fa-brands fa-figma"></i>
+                                    <i class="service__real-icon fa-solid fa-pen"></i>
+                                </div>
+
+                                <div class="service__content">
+                                    <h4 class="service__title">Diseño UX/UI</h4>
+                                    <p class="service__description">
+                                        Como diseñador UX/UI, me dedico a crear experiencias de usuario intuitivas y
+                                        memorables. Priorizo la usabilidad y la estética en cada proyecto, asegurándome
+                                        de que cada interfaz sea accesible y fácil de navegar. Utilizo herramientas de
+                                        prototipado y pruebas de usuario para garantizar que cada diseño cumpla con las
+                                        expectativas y necesidades del cliente.
+                                    </p>
+                                </div>
+                            </article>
+                            <div class="services__right-column">
+                            </div>
+                </section>
+
+                <section class="aptitudes">
+                    <header class="aptitudes__header">
+                        <h3 class="aptitudes__title">
+                            Mis <span class="title__color">Aptitudes</span>
+                        </h3>
+                    </header>
+
+                    <div class="aptitudes__container">
+                        <ul class="aptitudes__list">
+                            <li class="aptitudes__item">
+                                <p class="aptitudes__description">
+                                    Capacidad para trabajar tanto de manera independiente como en equipo.
+                                </p>
+                                <span class="aptitudes__stars">
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                </span>
+                            </li>
+                            <li class="aptitudes__item">
+                                <p class="aptitudes__description">
+                                    Acostumbrado a trabajar por objetivos y con una clara orientación al logro.
+                                </p>
+                                <span class="aptitudes__stars">
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                </span>
+                            </li>
+                            <li class="aptitudes__item">
+                                <p class="aptitudes__description">
+                                    Afición por los desafíos y una mente abierta a nuevas ideas.
+                                </p>
+                                <span class="aptitudes__stars">
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                </span>
+                            </li>
+                            <li class="aptitudes__item">
+                                <p class="aptitudes__description">
+                                    Empatía, amabilidad, voluntad y tenacidad en mi enfoque de trabajo.
+                                </p>
+                                <span class="aptitudes__stars">
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                </span>
+                            </li>
+                            <li class="aptitudes__item">
+                                <p class="aptitudes__description">
+                                    Agilidad en el aprendizaje y alta tolerancia a la frustración.
+                                </p>
+                                <span class="aptitudes__stars">
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                    <i class="stars__star fa-solid fa-star"></i>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+
+</html>

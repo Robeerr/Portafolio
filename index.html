@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="./assets/fonts/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/fonts/poppins/poppins.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/scroll.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="assets/js/menu-desplegable.js" defer></script>
+
+    <title>Portafolio - Roberto López</title>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <!--Layout Principal-->
+    <div class="layout">
+
+        <!--Barra lateral (info usuario)-->
+        <aside class="layout__aside">
+            <section class="aside__user-info">
+                <!--Informacion general usuario-->
+                <div class="user-info__general">
+                    <div class="user-info__container-image">
+                        <img src="assets/img/Foto_Roberto_Lopez_360x360_Final.JPG" class="user-info__image"
+                            alt="Foto de perfil Roberto López">
+                    </div>
+                    <h2 class="user-info__name">Roberto López</h2>
+                    <h4 class="user-info__job">Desarrollador Web || Diseñador UX/UI</h4>
+                </div>
+
+                <!--Menú de navegación-->
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link menu__link--active">
+                                <i class="menu__icon fa-solid fa-house"></i>
+                                <span class="menu__overlay">Inicio</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="sobre-mi.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-user"></i>
+                                <span class="menu__overlay">Sobre mí</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="curriculum.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                                <span class="menu__overlay">Curriculum</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="portafolio.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-briefcase"></i>
+                                <span class="menu__overlay">Portafolio</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="contacto.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-envelope"></i>
+                                <span class="menu__overlay">Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!--Links a redes sociales-->
+                <div class="user-info__links">
+                    <ul class="links__social">
+                        <li class="social__option">
+                            <a href="#" class="social__link">
+                                <i class="social__icon fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                        <li class="social__option">
+                            <a href="#" class="social__link">
+                                <i class="social__icon fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Boton descargar cv-->
+                <div class="user-info__buttons">
+                    <a href="/assets/cv/CV ROBERTO LOPEZ.pdf" class="user-info__btn" id="downloadBtn"
+                        download="CV_Roberto_Lopez">Descargar
+                        CV</a>
+                </div>
+
+                <!--Pie de página-->
+                <footer class="user-info__footer">
+                    &copy; 2024 Roberto López
+                </footer>
+
+            </section>
+        </aside>
+
+        <!--Menu Responsive-->
+        <div class="layout__menu-toggle">
+            <i class="menu-toggle__icon fa-solid fa-bars"></i>
+            <i class="menu-toggle__icon fa-solid fa-xmark"></i>
+        </div>
+
+        <!--Contenido Principal-->
+        <main class="layout__content">
+            <section class="content__page">
+                <h1 class="page__name">Roberto López</h1>
+                <h2 class="page__job">Desarrollador Web || Diseñador UX/UI</h2>
+                <div class="user-info__buttons">
+                    <a href="/assets/cv/CV ROBERTO LOPEZ.pdf" class="user-info__btn__inicio" id="downloadBtn"
+                        download="CV_Roberto_Lopez">Descargar
+                        CV</a>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="./assets/fonts/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/fonts/poppins/poppins.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/scroll.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="assets/js/menu-desplegable.js" defer></script>
+
+    <title>Portafolio - Roberto López</title>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <!--Layout Principal-->
+    <div class="layout">
+
+        <!--Barra lateral (info usuario)-->
+        <aside class="layout__aside">
+            <section class="aside__user-info">
+                <!--Informacion general usuario-->
+                <div class="user-info__general">
+                    <div class="user-info__container-image">
+                        <img src="assets/img/Foto_Roberto_Lopez_360x360_Final.JPG" class="user-info__image"
+                            alt="Foto de perfil Roberto López">
+                    </div>
+                    <h2 class="user-info__name">Roberto López</h2>
+                    <h4 class="user-info__job">Desarrollador Web || Diseñador UX/UI</h4>
+                </div>
+
+                <!--Menú de navegación-->
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+                        <li class="menu__option">
+                            <a href="index.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-house"></i>
+                                <span class="menu__overlay">Inicio</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="sobre-mi.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-user"></i>
+                                <span class="menu__overlay">Sobre mí</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="curriculum.html" class="menu__link menu__link--active">
+                                <i class="menu__icon fa-solid fa-graduation-cap"></i>
+                                <span class="menu__overlay">Curriculum</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="portafolio.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-briefcase"></i>
+                                <span class="menu__overlay">Portafolio</span>
+                            </a>
+                        </li>
+
+                        <li class="menu__option">
+                            <a href="contacto.html" class="menu__link">
+                                <i class="menu__icon fa-solid fa-envelope"></i>
+                                <span class="menu__overlay">Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!--Links a redes sociales-->
+                <div class="user-info__links">
+                    <ul class="links__social">
+                        <li class="social__option">
+                            <a href="#" class="social__link">
+                                <i class="social__icon fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+
+                        <li class="social__option">
+                            <a href="#" class="social__link">
+                                <i class="social__icon fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Boton descargar cv-->
+                <div class="user-info__buttons">
+                    <a href="/assets/cv/CV ROBERTO LOPEZ.pdf" class="user-info__btn" id="downloadBtn"
+                        download="CV_Roberto_Lopez">Descargar
+                        CV</a>
+                </div>
+
+                <!--Pie de página-->
+                <footer class="user-info__footer">
+                    &copy; 2024 Roberto López
+                </footer>
+
+            </section>
+        </aside>
+
+        <!--Menu Responsive-->
+        <div class="layout__menu-toggle">
+            <i class="menu-toggle__icon fa-solid fa-bars"></i>
+            <i class="menu-toggle__icon fa-solid fa-xmark"></i>
+        </div>
+
+        <!--Contenido Principal-->
+        <main class="layout__content">
+
+            <section class="content__page content__resume">
+
+                <header class="resume__header">
+                    <h1 class="resume__title">Formación y Experiencia</h1>
+                </header>
+
+                <div class="resume__container">
+
+                    <section class="resume__left">
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">Formación</h2>
+                        </header>
+
+                        <div class="resume__timelines">
+
+                            <article class="timelines__timeline">
+                                <header class="timeline__header">
+                                    <h4 class="timeline__year">2023</h4>
+                                    <span class="timeline__company">The Bridge - Digital Talent Acelerator</span>
+                                </header>
+
+                                <div class="timeline__divider"></div>
+
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">BBK Bootcamp Diseño UX/UI</h3>
+                                    <p class="timeline__text">
+                                        Desarrollar un profundo entendimiento de las mejores prácticas de diseño de
+                                        UX/UI, incluyendo <strong>investigación de usuarios, generación de personas,
+                                            mapeo de viajes de usuarios, diseño de wireframes, prototipos, pruebas de
+                                            usabilidad</strong>, etc..., también utilizar herramientas
+                                        como <strong>Figma</strong>.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="timelines__timeline">
+                                <header class="timeline__header">
+                                    <h4 class="timeline__year">2022</h4>
+                                    <span class="timeline__company">BBK Bootcamp - Code4jobs</span>
+                                </header>
+
+                                <div class="timeline__divider"></div>
+
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">BBK Bootcamp Desarrollador Full-Stack</h3>
+                                    <p class="timeline__text">
+                                        Me formé intensivamente en un Bootcamp de Desarrollo Full-Stack, donde adquirí
+                                        competencias en lenguajes clave (stack MERN) como <strong>HTML, CSS, React y
+                                            Javascript</strong>. Profundicé en el manejo de <strong>MongoDB</strong> y
+                                        en el desarrollo backend con <strong>Nestjs, Nodejs y Express.js</strong>. Esta
+                                        formación me brindó una visión integral del desarrollo de software, abarcando
+                                        tanto el front-end como el back-end.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="timelines__timeline">
+                                <header class="timeline__header">
+                                    <h4 class="timeline__year">2018 - 2019</h4>
+                                    <span class="timeline__company">Centro Formación Somorrostro</span>
+                                </header>
+
+                                <div class="timeline__divider"></div>
+
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Grado Medio en Sistemas Microinformaticos y Redes</h3>
+                                    <p class="timeline__text">
+                                        Titulado en Grado Medio de Sistemas Microinformáticos y Redes, con formación en
+                                        la gestión, mantenimiento e implementación de sistemas informáticos y
+                                        estructuras de red.
+                                    </p>
+                                </div>
+                            </article>
+
+                        </div>
+
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">Experiencia</h2>
+                        </header>
+
+                        <div class="resume__timelines">
+
+                            <article class="timelines__timeline">
+                                <header class="timeline__header">
+                                    <h4 class="timeline__year">2023</h4>
+                                    <span class="timeline__company">Hodeia.digital</span>
+                                </header>
+
+                                <div class="timeline__divider"></div>
+
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Desarrollor Full-Stack</h3>
+                                    <p class="timeline__text">
+                                        Me encargué del desarrollo y expansión de módulos innovadores para BuildApp,
+                                        atendiendo y adaptando mejoras propuestas directamente por nuestros usuarios.
+                                        Actué de forma proactiva en la resolución de incidencias, a la vez que
+                                        perfeccioné mis habilidades en lenguajes y herramientas clave como <strong>PHP,
+                                            Angular, MySql, CSS y Bootstrap</strong> entre otros.
+                                    </p>
+                                </div>
+                            </article>
+
+                            <article class="timelines__timeline">
+                                <header class="timeline__header">
+                                    <h4 class="timeline__year">2019 - 2022</h4>
+                                    <span class="timeline__company">Covirán</span>
+                                </header>
+
+                                <div class="timeline__divider"></div>
+
+                                <div class="timeline__description">
+                                    <h3 class="timeline__title">Administrador</h3>
+                                    <p class="timeline__text">
+                                        Dirigí la gestión integral de pedidos en el supermercado, desde su creación
+                                        hasta la entrega, asegurando su precisión y eficiencia en cada etapa. Además,
+                                        supervisé la recepción y revisión de cargas entrantes y me encargué de mantener
+                                        actualizados los precios de los productos, garantizando la competitividad y
+                                        exactitud en nuestro inventario.
+                                    </p>
+                                </div>
+                            </article>
+
+                        </div>
+
+                    </section>
+
+                    <section class="resume__right">
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">Habilidades de <span class="subtitle__color">Código</span></h2>
+                        </header>
+
+                        <div class="resume__skills">
+                            <article class="skills__title">
+                                <h4 class="skills__text">Html / CSS</h4>
+                                <span class="skills__number">90%</span>
+                            </article>
+
+                            <div class="skills__progressbar">
+                                <div class="skills__percentage skills__percentage--p1"></div>
+                            </div>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Javascript</h4>
+                                <span class="skills__number">60%</span>
+                            </article>
+
+                            <div class="skills__progressbar">
+                                <div class="skills__percentage skills__percentage--p2"></div>
+                            </div>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">React</h4>
+                                <span class="skills__number">50%</span>
+                            </article>
+
+                            <div class="skills__progressbar">
+                                <div class="skills__percentage skills__percentage--p3"></div>
+                            </div>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Angular</h4>
+                                <span class="skills__number">60%</span>
+                            </article>
+
+                            <div class="skills__progressbar">
+                                <div class="skills__percentage skills__percentage--p4"></div>
+                            </div>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Php</h4>
+                                <span class="skills__number">70%</span>
+                            </article>
+
+                            <div class="skills__progressbar">
+                                <div class="skills__percentage skills__percentage--p5"></div>
+                            </div>
+
+                        </div>
+
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">Habilidades de <span class="subtitle__color">Diseño</span></h2>
+                        </header>
+
+                        <div class="resume__skills">
+                            <article class="skills__title">
+                                <h4 class="skills__text">Diseño de Interfaces de Usuario (UI)</h4>
+                                <span class="skills__number">70%</span>
+                            </article>
+
+                            <div class="skills__progressbar">
+                                <div class="skills__percentage skills__percentage--p6"></div>
+                            </div>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Diseño de Experiencia de Usuario (UX)</h4>
+                                <span class="skills__number">60%</span>
+                            </article>
+
+                            <div class="skills__progressbar">
+                                <div class="skills__percentage skills__percentage--p7"></div>
+                            </div>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Figma</h4>
+                                <span class="skills__number">80%</span>
+                            </article>
+
+                            <div class="skills__progressbar">
+                                <div class="skills__percentage skills__percentage--p8"></div>
+                            </div>
+
+                            <article class="skills__title">
+                                <h4 class="skills__text">Maze</h4>
+                                <span class="skills__number">80%</span>
+                            </article>
+
+                            <div class="skills__progressbar">
+                                <div class="skills__percentage skills__percentage--p9"></div>
+                            </div>
+
+                        </div>
+
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">Áreas de Conocimiento</h2>
+                        </header>
+
+                        <div class="resume__knowledges">
+                            <ul class="knowledges__list">
+                                <li class="knowledges__option">Programación Full-Stack</li>
+                                <li class="knowledges__option">Front-End</li>
+                                <li class="knowledges__option">Back-End</li>
+                                <li class="knowledges__option">Diseño UI</li>
+                                <li class="knowledges__option">Diseño Ux</li>
+                            </ul>
+                        </div>
+
+                        <header class="resume__subheader">
+                            <h2 class="resume__subtitle">Idiomas</h2>
+                        </header>
+
+
+                        <div class="resume__languages">
+                            <ul class="languages__list">
+                                <li class="languages__option languages__option--spanish">Español - Nativo</li>
+                                <li class="languages__option languages__option--english">Ingles - Intermedio</li>
+                                <li class="languages__option languages__option--euskera">Euskera - Fluido</li>
+                            </ul>
+                        </div>
+
+                    </section>
+
+                </div>
+
+                <div class="resume__certificates">
+                    <header class="resume__subheader">
+                        <h1 class="resume__subtitle">Certificados</h1>
+                    </header>
+
+                    <section class="certificates__container">
+
+                        <article class="certificates__certificate">
+                            <div class="certificate__logo">
+                                <img src="assets/img/Bootcamp Fullstack.jpg" class="certificate__image"
+                                    alt="Certificado 1">
+                            </div>
+
+                            <div class="certificate__content">
+                                <h4 class="certificate__title">Bootcamp Full-Stack </h4>
+                                <span class="certificate__hours">480 horas</span>
+                                <span class="certificate__date">22 Diciembre 2022</span>
+                            </div>
+                        </article>
+
+                        <article class="certificates__certificate certificates__certificate--uxui">
+                            <div class="certificate__logo">
+                                <img src="assets/img/Bootcamp uxui.jpg" class="certificate__image" alt="Certificado 1">
+                            </div>
+
+                            <div class="certificate__content">
+                                <h4 class="certificate__title">Bootcamp Diseño UX/UI</h4>
+                                <span class="certificate__hours">480 horas</span>
+                                <span class="certificate__date">29 Septiembre 2023</span>
+                            </div>
+                        </article>
+
+                        <article class="certificates__certificate">
+                            <div class="certificate__logo">
+                                <img src="assets/img/Curso Angular.jpg" class="certificate__image" alt="Certificado 1">
+                            </div>
+
+                            <div class="certificate__content">
+                                <h4 class="certificate__title">Curso Angular: De cero a experto</h4>
+                                <span class="certificate__hours">44 horas</span>
+                                <span class="certificate__date">09 Febrero 2023</span>
+                            </div>
+                        </article>
+
+                        <article class="certificates__certificate">
+                            <div class="certificate__logo">
+                                <img src="assets/img/Curso css.jpg" class="certificate__image" alt="Certificado 1">
+                            </div>
+
+                            <div class="certificate__content">
+                                <h4 class="certificate__title">Master en CSS: Responsive, SASS, Flexbox, Grid y
+                                    Bootstrap</h4>
+                                <span class="certificate__hours">20.5 horas</span>
+                                <span class="certificate__date">12 Diciembre 2022</span>
+                            </div>
+                        </article>
+
+                        <article class="certificates__certificate">
+                            <div class="certificate__logo">
+                                <img src="assets/img/Curso uxui.jpg" class="certificate__image" alt="Certificado 1">
+                            </div>
+
+                            <div class="certificate__content">
+                                <h4 class="certificate__title">Curso Diseño UX: experiencia de usuario UX/UI + Figma
+                                    2023</h4>
+                                <span class="certificate__hours">22.5 horas</span>
+                                <span class="certificate__date">04 Diciembre 2023</span>
+                            </div>
+                        </article>
+
+                    </section>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
