@@ -81,7 +81,7 @@ body {
 .layout__aside {
   grid-area: aside;
   border-radius: 4rem 0 0 4rem;
-  overflow: auto;
+  overflow: hidden;
   overflow-x: hidden;
 }
 
