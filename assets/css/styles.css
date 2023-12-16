@@ -106,9 +106,11 @@ body {
 
 .user-info__image {
   width: 100%;
+  height: auto;
   background-color: var(--color-primary);
   border: 3px solid var(--color-primary);
-  border-radius: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .user-info__container-image::after {
