@@ -856,6 +856,7 @@ body {
 .certificate__title {
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
+  color: var(--color-secondary);
 }
 
 .certificate__hours {
