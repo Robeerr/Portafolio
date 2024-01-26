@@ -18,9 +18,6 @@
 /* Estilos Generales*/
 html {
   font-size: 62.5%;
-  margin: 0;
-  padding: 0;
-  height: 100%;
 }
 
 body {
@@ -34,7 +31,6 @@ body {
   background-color: var(--color-background);
   color: var(--color-text);
   overflow: hidden;
-  overflow-x: hidden;
 }
 
 #particles-js {
@@ -324,6 +320,7 @@ body {
   min-height: 100%;
   padding: 6rem;
   padding-right: 3rem;
+  overflow: auto;
 }
 
 .about__header,
@@ -921,7 +918,6 @@ body {
   padding: 5rem 10rem 5rem 10rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 5rem;
-  margin: 0;
   padding: 10px;
   text-align: center;
 }
