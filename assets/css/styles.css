@@ -18,10 +18,15 @@
 /* Estilos Generales*/
 html {
   font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 body {
   position: relative;
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
   font-family: "Poppins", Helvetica, sans-serif;
@@ -29,6 +34,7 @@ body {
   background-color: var(--color-background);
   color: var(--color-text);
   overflow: hidden;
+  overflow-x: hidden;
 }
 
 #particles-js {
@@ -318,7 +324,6 @@ body {
   min-height: 100%;
   padding: 6rem;
   padding-right: 3rem;
-  overflow: auto;
 }
 
 .about__header,
@@ -915,7 +920,10 @@ body {
 .gallery__item {
   padding: 5rem 10rem 5rem 10rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
 }
 
 .gallery__container-image {
@@ -938,7 +946,8 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   display: block;
   transition: all 300ms ease-in-out;
 }
@@ -950,6 +959,13 @@ body {
   font-weight: bold;
   color: var(--color-secondary);
   text-align: center;
+}
+
+.gallery__title,
+.gallery__icon,
+p {
+  font-size: 14px;
+  padding: 0 10px;
 }
 
 .gallery__icon {
