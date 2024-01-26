@@ -875,6 +875,14 @@ body {
 }
 
 /* Portfolio*/
+
+.rol {
+  font-size: 1.5rem;
+  color: var(--color-subtitle);
+  opacity: 0.9;
+  margin-top: 3rem;
+}
+
 .portfolio__navbar {
   margin-bottom: 3rem;
 }
@@ -950,18 +958,11 @@ body {
 
 .gallery__title {
   margin-top: 1rem;
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   padding: 1.5rem 0;
   font-weight: bold;
   color: var(--color-secondary);
   text-align: center;
-}
-
-.gallery__title,
-.gallery__icon,
-p {
-  font-size: 14px;
-  padding: 0 10px;
 }
 
 .gallery__icon {
