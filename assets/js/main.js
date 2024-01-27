@@ -1,3 +1,18 @@
+function openModal(src, alt) {
+    var modal = document.getElementById('myModal');
+    var modalImg = document.getElementById("modalImage");
+    var captionText = document.getElementById("caption");
+
+    modal.style.display = "block";
+    modalImg.src = src;
+    captionText.innerHTML = alt;
+}
+
+function closeModal() {
+    var modal = document.getElementById('myModal');
+    modal.style.display = "none";
+}
+
 function sendMail(e) {
     e.preventDefault();
     emailjs.init(`2Uql9M7zeuydWs_1a`)

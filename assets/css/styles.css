@@ -1,7 +1,7 @@
 /* Definicion Variables*/
 :root {
   --color-primary: #ffffff;
-  --color-secondary: #04b4e0;
+  --color-secondary: #3ac5d9;
   --color-background: #f2f7f9;
   --color-transparent: transparent;
   --color-icon: #b5b5b7;
@@ -219,6 +219,58 @@ body {
 }
 
 /* Contenedor Principal*/
+
+.user-info__container-technologies {
+  width: 70%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.user-info__container-frameworks {
+  width: 70%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.technologies__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.technologies__container_frameworks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.technologies__frameworks-frontend,
+.technologies__frameworks-backend {
+  display: flex; /* Apila los elementos verticalmente */
+  align-items: flex-start; /* Alinea los elementos a la izquierda */
+}
+
+.technologies__frameworks-frontend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem;
+  margin-top: 3rem;
+}
+
+.technologies__frameworks-backend {
+  margin-top: 5rem;
+  gap: 1rem;
+}
+
+.technologies__frameworks-version-control {
+  margin-top: 3rem;
+}
+
 .layout__content {
   grid-area: content;
   height: 100%;
@@ -875,7 +927,6 @@ body {
 }
 
 /* Portfolio*/
-
 .rol {
   font-size: 1.5rem;
   color: var(--color-subtitle);
@@ -915,14 +966,12 @@ body {
 
 .portfolio__gallery {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around; /* Esto separa los elementos uniformemente */
 }
 
 .gallery__item {
+  width: 48%;
   padding: 5rem 10rem 5rem 10rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 5rem;
@@ -931,8 +980,15 @@ body {
 }
 
 .gallery__container-image {
+  width: 100%;
+  height: auto;
   overflow: hidden;
   position: relative;
+}
+
+.gallery__container-image:hover .gallery__title,
+.gallery__container-image:hover .gallery__title__p {
+  opacity: 1; /* Hace el título más visible */
 }
 
 .gallery__container-image:hover::after {
@@ -950,7 +1006,7 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
   transition: all 300ms ease-in-out;
@@ -989,17 +1045,15 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: var(
-    --color-secondary
-  ); /* Asume que has definido el color secundario */
-  color: var(--color-primary); /* Ícono de color blanco */
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--color-primary);
   cursor: pointer;
   z-index: 10;
-  width: 2rem; /* Tamaño del botón */
-  height: 2; /* Tamaño del botón */
-  border-radius: 50%; /* Hace el botón completamente redondo */
+  width: 2rem;
+  height: 2;
+  border-radius: 50%;
   border: none;
-  font-size: 1.5rem; /* Ajusta esto según el tamaño de tus íconos */
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1007,15 +1061,16 @@ body {
 }
 
 .gallery__nav:hover {
-  transform: translateY(-50%) scale(1.1); /* Efecto de escala al hacer hover */
+  transform: translateY(-50%) scale(1.1);
+  background-color: var(--color-secondary);
 }
 
 .gallery__nav--prev {
-  left: 10px; /* Espaciado desde el borde izquierdo del contenedor */
+  left: 10px;
 }
 
 .gallery__nav--next {
-  right: 10px; /* Espaciado desde el borde derecho del contenedor */
+  right: 10px;
 }
 
 .gallery__image {

@@ -194,6 +194,11 @@
     border-radius: 0;
     height: 100vh;
   }
+
+  .gallery__item {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 @media (max-width: 810px) {
@@ -351,5 +356,18 @@
     flex-basis: 100%;
     max-width: 100%;
     max-height: 100%;
+  }
+}
+
+@media (max-width: 553px) {
+  .technologies__container .technologies__item img,
+  .technologies__container_frameworks .technologies__item img,
+  .technologies__frameworks-version-control .technologies__item img,
+  .technologies__item-php img {
+    width: 50px;
+  }
+
+  .technologies__frameworks-backend {
+    margin-top: 0;
   }
 }
