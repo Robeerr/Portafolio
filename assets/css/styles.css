@@ -254,14 +254,14 @@ body {
 }
 
 .technologies__frameworks-backend img {
-  width: 7rem;
+  width: 8rem;
   height: 5rem;
 }
 
 .technologies__frameworks-frontend,
 .technologies__frameworks-backend {
-  display: flex; /* Apila los elementos verticalmente */
-  align-items: flex-start; /* Alinea los elementos a la izquierda */
+  display: flex;
+  align-items: flex-start;
 }
 
 .technologies__frameworks-frontend {
@@ -272,7 +272,10 @@ body {
 }
 
 .technologies__frameworks-backend {
-  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  
+  gap: 3rem;
 }
 
 .layout__content {
