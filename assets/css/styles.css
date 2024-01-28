@@ -227,25 +227,35 @@ body {
 
 .user-info__container-frameworks {
   width: 70%;
-  margin-top: 2rem;
+  margin-top: 5rem;
   margin-bottom: 2rem;
+}
+
+.technologies__frameworks-version-control{
+  margin-top: 2rem;
+  width: 8rem
 }
 
 .technologies__container {
   display: flex;
   flex-wrap: wrap;
-  gap: 5rem;
-  margin-top: 5rem;
+  gap: 6rem;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .technologies__container_frameworks {
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 4rem;
   margin-top: 3rem;
   justify-content: center;
   align-items: center;
+}
+
+.technologies__frameworks-backend img {
+  width: 7rem;
+  height: 5rem;
 }
 
 .technologies__frameworks-frontend,
@@ -262,12 +272,7 @@ body {
 }
 
 .technologies__frameworks-backend {
-  margin-top: 5rem;
   gap: 1rem;
-}
-
-.technologies__frameworks-version-control {
-  margin-top: 3rem;
 }
 
 .layout__content {
