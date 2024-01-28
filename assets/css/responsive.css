@@ -129,7 +129,7 @@
 
   .layout__menu {
     position: static;
-    margin: 3rem 0;
+    margin: 2rem 0;
   }
 
   .menu__list {
@@ -175,8 +175,7 @@
   }
 
   .user-info__buttons {
-    margin-top: 7rem;
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
   }
 
   .user-info__job {
@@ -375,12 +374,6 @@
   }
 
   .technologies__frameworks-backend {
-    margin-top: 0;
-  }
-}
-
-@media (max-height: 890px) {
-  .user-info__buttons {
     margin-top: 0;
   }
 }
