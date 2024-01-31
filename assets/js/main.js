@@ -1,17 +1,22 @@
-function openModal(src, alt) {
-    var modal = document.getElementById('myModal');
-    var modalImg = document.getElementById("modalImage");
-    var captionText = document.getElementById("caption");
+function showImageInModal(container) {
+    var images = container.getElementsByTagName('img');
+    var carouselInner = document.getElementById('carouselInner');
+    carouselInner.innerHTML = ''; // Limpiar contenido previo del carrusel
 
-    modal.style.display = "block";
-    modalImg.src = src;
-    captionText.innerHTML = alt;
+    for (var i = 0; i < images.length; i++) {
+        var carouselItem = document.createElement('div');
+        carouselItem.className = 'carousel-item';
+        if (i === 0) carouselItem.classList.add('active'); // La primera imagen es activa
+
+        var img = document.createElement('img');
+        img.src = images[i].src;
+        img.className = 'd-block w-100'; // Clases para el estilo del carrusel
+
+        carouselItem.appendChild(img);
+        carouselInner.appendChild(carouselItem);
+    }
 }
 
-function closeModal() {
-    var modal = document.getElementById('myModal');
-    modal.style.display = "none";
-}
 
 function sendMail(e) {
     e.preventDefault();

@@ -401,3 +401,49 @@
     width: 80px;
   }
 }
+
+@media (min-width: 360px) and (max-width: 693px) {
+  .user-info__container-technologies {
+    width: 100%;
+  }
+
+  .technologies__container {
+    gap: 4rem;
+  }
+
+  .technologies__frameworks-frontend {
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 1177px) {
+  .technologies__frameworks-frontend {
+    margin-top: 5rem;
+  }
+
+  .user-info__container-technologies {
+    margin-top: 5rem;
+  }
+
+  .technologies__frameworks-backend {
+    margin-top: 5rem;
+  }
+
+  .technologies__frameworks-version-control {
+    margin-top: 5rem;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 575px) {
+  #carouselControlNext,
+  #carouselControlPrev {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  #carouselControlNext,
+  #carouselControlPrev {
+    font-size: 3rem;
+  }
+}
