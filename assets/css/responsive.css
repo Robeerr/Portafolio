@@ -384,6 +384,10 @@
     height: 40px;
   }
 
+  .content__page .technologies__container img {
+    height: 45px;
+  }
+
   .links__social {
     margin-top: 0;
   }

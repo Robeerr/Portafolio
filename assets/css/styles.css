@@ -986,6 +986,15 @@ body {
   text-align: center;
 }
 
+.gallery__item-last {
+  width: 100%;
+  padding: 5rem 10rem 5rem 10rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5rem;
+  padding: 10px;
+  text-align: center;
+}
+
 .gallery__container-image {
   width: 100%;
   height: auto;
